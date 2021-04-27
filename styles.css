@@ -1,0 +1,88 @@
+* {
+    margin:0;
+    padding:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sign-in-container {
+    width:100%;
+    height:100vh;
+    background: linear-gradient(270deg, #373b44, #4286f4);
+    background-size: 400% 400%;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    
+    
+}
+
+#sign-up {
+    display:none;
+}
+
+
+    
+@-webkit-keyframes gradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.form {
+    width:70vh;
+    height:80%;
+    background-color: rgba(255, 255, 255, 0.06);
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	border-radius: 8px;
+	-webkit-box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+	box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.form input {
+    text-align:center;
+    border-radius:15px;
+    outline:none !important;
+    border: 2px solid black;
+    background: white;
+    color: #555;
+    padding:10px;
+    transition:all 0.5s ease;
+}
+.form input:focus {
+    border:2px solid #a7a5a5;
+}
+.form button {
+    width:100px;
+    padding:5px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+    background: linear-gradient(270deg, #373b44, #4286f4);
+
+}
+.form input, button, span {
+    margin-top:15%;
+}
+.form span {
+    color:#a7a5a5;
+    cursor:pointer;
+}

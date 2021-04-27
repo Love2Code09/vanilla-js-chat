@@ -1,0 +1,109 @@
+* {
+   margin:0;
+   padding:0;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    cursor:grab;
+    transition:all 0.5s ease;
+  }
+::-webkit-scrollbar-thumb {
+      background:rgb(150, 146, 140);
+    
+}
+
+.chat-container {
+    width:100%;
+    height:100vh;
+    color:white;
+    background: linear-gradient(270deg, #373b44, #4286f4);
+    background-size: 400% 400%;
+
+    position:relative;
+}
+
+
+.chat-container button {
+    width:100px;
+    height:50px;
+    position:absolute;
+    top:0;
+    right:0;
+    margin:0 auto;
+    padding:10px;
+    cursor:pointer;
+    border:2px solid rgb(75, 76, 77);
+    background-color: rgb(82, 83, 87);
+    color:white;
+    
+}
+.box-container {
+    margin:0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+    height:50vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    background-color: rgba(255, 255, 255, 0.06);
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+	border-radius: 8px;
+	-webkit-box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+	box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+   
+ 
+}
+.msg-container {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    
+    height:fit-content;
+    text-align:center;
+   
+    
+
+}
+span {
+    color:white;
+    
+}
+@media screen and (max-width:600px) {
+    .box-container {
+        height:70vh;
+        width:100%;
+    }
+  
+   
+}
+textarea {
+    background:none;
+    color:white;
+    border:2px solid  whitesmoke;
+    outline:none !important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.msg {
+    width:100%;
+    height:fit-content;
+    border-bottom: 0.1px solid #8585856c;
+    margin-top:2%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.msg h3, p, span {
+    margin-left:2%;
+    margin-top:5px;
+    padding:10px;
+}
+
+h1 {
+    margin-left:15px;
+}
